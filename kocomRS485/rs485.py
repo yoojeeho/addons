@@ -1074,7 +1074,6 @@ class Kocom(rs485):
         return fan
 
     def parse_switch(self, device, room, value='0000000000000000'):
-        logger.info('[Recv Packet] ' + value)
         switch = {}
         on_count = 0
         to_i = KOCOM_LIGHT_SIZE.get(room) + 1 if device == DEVICE_LIGHT else KOCOM_PLUG_SIZE.get(room) + 1
@@ -1086,6 +1085,7 @@ class Kocom(rs485):
         return switch
 
     def parse_thermostat(self, value='0000000000000000', init_temp=False):
+        logger.info('[Recv Packet] ' + value)
         thermo = {}
         heat_mode = 'heat' if value[:2] == '11' else 'off'
         away_mode = 'on' if value[2:4] == '01' else 'off'

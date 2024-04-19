@@ -1519,7 +1519,7 @@ if __name__ == '__main__':
                 if r._connect[device].isOpen():
                     _name = r._device[device]
                     try:
-                        logger.info('[CONFIG] {} 초기화'.format(_name))
+                        logger.info('[CONFIG] {} 초기화!'.format(_name))
                         if _name == 'kocom':
                             kocom = Kocom(r, _name, device, 42)
                         elif _name == 'grex_ventilator':

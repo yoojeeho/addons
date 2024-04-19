@@ -1041,6 +1041,7 @@ class Kocom(rs485):
                         p_value += '1100'
                     elif mode == 'off':
                         # p_value += '0001'
+                        logger.info('Hi')
                         p_value += '1111'
                     else:
                         p_value += '1101'

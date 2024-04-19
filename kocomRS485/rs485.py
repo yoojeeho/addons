@@ -1074,6 +1074,7 @@ class Kocom(rs485):
         return fan
 
     def parse_switch(self, device, room, value='0000000000000000'):
+        logger.info('[Recv Packet] ' + value)
         switch = {}
         on_count = 0
         to_i = KOCOM_LIGHT_SIZE.get(room) + 1 if device == DEVICE_LIGHT else KOCOM_PLUG_SIZE.get(room) + 1

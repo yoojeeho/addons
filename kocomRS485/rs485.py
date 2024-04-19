@@ -1041,7 +1041,7 @@ class Kocom(rs485):
                         p_value += '1100'
                     elif mode == 'off':
                         # p_value += '0001'
-                        p_value += '1000'
+                        p_value += '1111'
                     else:
                         p_value += '1101'
                     p_value += '{0:02x}'.format(int(float(target_temp)))

@@ -41,12 +41,12 @@
       "password": "pw"
     },
     "Wallpad": {
-      "light": false,
-      "plug": false,
-      "thermostat": false,
-      "fan": false,
-      "gas": false,
-      "elevator": false
+      "light": true,
+      "plug": true,
+      "thermostat": true,
+      "fan": true,
+      "gas": true,
+      "elevator": true
     },
     "Advanced": {
       "INIT_TEMP": 22,
@@ -62,25 +62,21 @@
       },
       {
         "name": "bedroom",
-        "number": 2
+        "number": 3
       },
       {
         "name": "room1",
-        "number": 2
+        "number": 1
       },
       {
         "name": "room2",
-        "number": 2
-      },
-      {
-        "name": "kitchen",
-        "number": 3
+        "number": 1
       }
     ],
     "KOCOM_PLUG_SIZE": [
       {
         "name": "livingroom",
-        "number": 3
+        "number": 2
       },
       {
         "name": "bedroom",
@@ -93,10 +89,6 @@
       {
         "name": "room2",
         "number": 2
-      },
-      {
-        "name": "kitchen",
-        "number": 3
       }
     ],
     "KOCOM_ROOM": [
@@ -104,7 +96,6 @@
       "bedroom",
       "room1",
       "room2",
-      "kitchen"
     ],
     "KOCOM_ROOM_THERMOSTAT": [
       "livingroom",
